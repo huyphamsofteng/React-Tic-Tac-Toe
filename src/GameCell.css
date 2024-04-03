@@ -1,0 +1,10 @@
+.GameCell{
+    width: 30%;
+    height: 30%;
+    padding: 0;
+    background-color: #FFC94A;
+    font-size: 8rem;
+    text-align: center;
+    font-weight: 700;
+    color: #7AA2E3;
+}

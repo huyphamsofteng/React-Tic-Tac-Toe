@@ -1,0 +1,10 @@
+.GameBoard{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    width: 700px;
+    height: 700px;
+    place-content: center;
+    background-color: #C08B5C;
+    border-radius: 20px;
+}
