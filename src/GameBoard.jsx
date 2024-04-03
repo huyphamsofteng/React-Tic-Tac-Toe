@@ -42,19 +42,17 @@ export default function GameBoard(){
         return null;
     }
     const reset = () =>{
+        winner = null;
+        nextTurn = 0;
         setStates(()=>{
             return new Array(9).fill(0)
         })
     }
     winner = isWinner();
-    
-    console.log(nextTurn);
     if (winner){
-        winner = null;
-        nextTurn = true;
-        return (<><h1>{winner === 2 ? winner = "Player 1" : winner = "Player 2"} Won!!!</h1><Reset reset={reset}/></>);
+        return (<><h1>{winner === 2 ? winner = "Cats" : winner = "Dogs"} Won!!!</h1><Reset reset={reset}/></>); //players name
     }
-    else{
+    else {
         return (
             <>
                 <div className="GameBoard">
@@ -64,6 +62,6 @@ export default function GameBoard(){
                 </div>
                 <Reset reset={reset}/>
             </>
-        );
+        );                 
     }
 }
